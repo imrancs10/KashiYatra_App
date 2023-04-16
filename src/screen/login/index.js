@@ -46,7 +46,7 @@ export default class LoginScreen extends Component {
           <Button
             title={LANGUAGE_TEXT.TEXT_LOGIN}
             color="#FFF"
-            onPress={() => alert('Hi')}
+            onPress={() => this.props.navigation.navigate('MyDrawer')}
           />
         </View>
         <View style={styles.signupContainer}>
