@@ -7,12 +7,19 @@ import styles from './styles';
 import {LANGUAGE_TEXT} from '../../configuration/languageFile';
 import Icon from 'react-native-vector-icons/Entypo';
 import {Button} from '@react-native-material/core';
+import SplashScreen from 'react-native-splash-screen'
 
 export default class LoginScreen extends Component {
   constructor(props) {
     super(props);
 
     this.state = {email: '', password: '', showPassword: true};
+  }
+
+  componentDidMount() {
+    // do stuff while splash screen is shown
+      // After having done stuff (such as async tasks) hide the splash screen
+      SplashScreen.hide();
   }
   //https://64.media.tumblr.com/3e5f06b5668c65b6a4338f106aeb350f/tumblr_ml9d45d12K1r4zr2vo2_r2_500.gifv
   /**<Image
