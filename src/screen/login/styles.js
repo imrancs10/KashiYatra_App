@@ -98,6 +98,19 @@ const styles = StyleSheet.create({
     fontSize: height * 0.02,
     color: '#FFF',
   },
+  emailTextField: {
+    width : width * 0.76 - 10,
+    height: 50,
+    left:5,
+    color : 'white',
+},
+eyeBtnContainer: {
+  width:20,
+  height:20,
+  marginTop:15,
+  position:'absolute',
+  marginLeft: width * 0.84 - 20,
+},
 });
 
 export default styles;

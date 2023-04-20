@@ -2,7 +2,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Feed from '../../screen/feed';
-import Profile from '../../screen/profile';
+import Profile from '../../screen/article';
 import CustomDrawer from '../../components/customDrawer';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 const Drawer = createDrawerNavigator();
@@ -13,7 +13,7 @@ function MyDrawer() {
     drawerContent={props => <CustomDrawer {...props} />}
     screenOptions={{
       headerShown: false,
-      drawerActiveBackgroundColor: '#aa18ea',
+      drawerActiveBackgroundColor: 'rgba(89,148,203,1.0)',
       drawerActiveTintColor: '#fff',
       drawerInactiveTintColor: '#333',
       drawerLabelStyle: {

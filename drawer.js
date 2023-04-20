@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Feed from './src/screen/feed';
-import Article from './src/screen/profile';
+import Article from './src/screen/article';
 import {NavigationContainer} from '@react-navigation/native';
 const Drawer = createDrawerNavigator();
 
