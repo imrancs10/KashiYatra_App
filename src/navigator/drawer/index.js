@@ -3,6 +3,7 @@
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Feed from '../../screen/feed';
 import Profile from '../../screen/article';
+import AddTempleDetail from '../../screen/addTemple';
 import CustomDrawer from '../../components/customDrawer';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 const Drawer = createDrawerNavigator();
@@ -25,6 +26,12 @@ function MyDrawer() {
       <Drawer.Screen name="Home" component={Feed} options={{
           drawerIcon: ({color}) => (
             <Ionicons name="home-outline" size={22} color={color} />
+          ),
+        }}/>
+
+<Drawer.Screen name="Add Temple Detail" component={AddTempleDetail} options={{
+          drawerIcon: ({color}) => (
+            <Ionicons name="cloud-upload" size={22} color={color} />
           ),
         }}/>
       <Drawer.Screen name="Profile" component={Profile} options={{

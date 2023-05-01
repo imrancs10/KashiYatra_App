@@ -1,10 +1,10 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react-native/no-inline-styles */
+
+
 import React from 'react';
 import {
   View,
 TouchableOpacity,
-Text
+Text,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -14,8 +14,9 @@ import styles from './styles';
 
 export default class TopBar extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
     }
+    
     render(){
         const {menuTapped, navTitle} = this.props;
         return (
@@ -25,9 +26,9 @@ export default class TopBar extends React.Component {
                 </TouchableOpacity>
 
 <Text style={styles.categoryTitle}>{navTitle}</Text>
-                <TouchableOpacity style={styles.barCodeScanner} onPress={menuTapped}>
-                    <MaterialCommunityIcons name="qrcode-scan" size={20} color="white" />
-                </TouchableOpacity>
+<TouchableOpacity style={styles.barCodeScanner} onPress={menuTapped}>
+                     <MaterialCommunityIcons name="qrcode-scan" size={20} color="white" />
+                      </TouchableOpacity>
 
                 <TouchableOpacity style={styles.searchIconContainer} onPress={menuTapped}>
                     <FontAwesome name="search" size={20} color="white" />
