@@ -10,7 +10,19 @@ const styles = StyleSheet.create({
       width,
       height,
       position: 'absolute',
-    }
+    },
+    logoTopContainer:{
+        width,
+        height: height * 0.20,
+        position: 'absolute',
+        justifyContent : 'center',
+        alignItems  : 'center',
+        marginTop : height * 0.14,
+      },
+      logo:{
+        width,
+        height: height * 0.20,
+      }
 })
 
 export default styles;

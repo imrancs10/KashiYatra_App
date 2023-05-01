@@ -170,7 +170,7 @@ export default class Feed extends Component {
     return (
       <View style = {styles.container}>
       <Image style={styles.bgImage} source={require('../../img/background3.jpeg')} resizeMode="stretch" />
-       <TopBar menuTapped={()=> this.menuTapped()}  />
+       <TopBar menuTapped={()=> this.menuTapped()}  navTitle={'Kashi Yatra'}/>
        {this.renderNearByUI()}
        {this.renderExploreUI()}
         {this.renderEventsUI()}

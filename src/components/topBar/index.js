@@ -4,6 +4,7 @@ import React from 'react';
 import {
   View,
 TouchableOpacity,
+Text
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -16,13 +17,14 @@ export default class TopBar extends React.Component {
         super(props)
     }
     render(){
-        const {menuTapped} = this.props;
+        const {menuTapped, navTitle} = this.props;
         return (
             <View style={styles.container} >
                 <TouchableOpacity style={styles.menuIconContainer} onPress={menuTapped}>
                     <Icon name="menu-sharp" size={25} color="white" />
                 </TouchableOpacity>
 
+<Text style={styles.categoryTitle}>{navTitle}</Text>
                 <TouchableOpacity style={styles.barCodeScanner} onPress={menuTapped}>
                     <MaterialCommunityIcons name="qrcode-scan" size={20} color="white" />
                 </TouchableOpacity>

@@ -30,10 +30,18 @@ export default class LoginScreen extends Component {
       <View style={styles.container}>
         <Image
           style={styles.bgImage}
-          source={require('../../assets/images/login.gif')}
+          source={require('../../assets/images/login2.gif')}
           resizeMode="stretch"
           resizeMethod="auto"
         />
+        <View style={styles.logoTopContainer}>
+        <Image
+          style={styles.logo}
+          source={require('../../assets/images/KashiYatraLogo.png')}
+          resizeMode="center"
+          resizeMethod="auto"
+        />
+        </View>
 
         <Text style={styles.title}> {LANGUAGE_TEXT.TITLE_KASHI_YATRA}</Text>
         <Text style={styles.desc}> {LANGUAGE_TEXT.SMALL_DESCRIPTION_TEXT}</Text>

@@ -8,6 +8,12 @@ const styles = StyleSheet.create({
     barCodeScanner: {width : 30, marginLeft: width - 170, marginTop: 15},
     searchIconContainer: {width : 30, marginLeft: 10, marginTop: 15},
     shareIconContainer: {width : 30, marginLeft: 10, marginTop: 15},
+    categoryTitle  : {color: '#fff',fontSize: 19,fontFamily: 'Roboto-Medium',width : 105 ,
+       textAlign : 'center',
+       marginTop : 13,
+       position:'absolute',
+       marginLeft: 50,
+    }
 
 });
 

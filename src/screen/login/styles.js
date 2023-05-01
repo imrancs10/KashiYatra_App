@@ -11,6 +11,18 @@ const styles = StyleSheet.create({
     height,
     position: 'absolute',
   },
+  logoTopContainer:{
+    width,
+    height: height * 0.20,
+    position: 'absolute',
+    justifyContent : 'center',
+    alignItems  : 'center',
+    marginTop : height * 0.1,
+  },
+  logo:{
+    width,
+    height: height * 0.20,
+  },
   title: {
     color: 'white',
     width,
